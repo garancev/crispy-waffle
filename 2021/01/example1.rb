@@ -17,13 +17,12 @@ puts increments
 
 puts '~~~~ sliding increments ~~~~'
 
-example2 = File.read("example2.csv").split
 measurement_windows = []
-example2.each_with_index do |depth, index|
+file_data.each_with_index do |depth, index|
   puts index
   next unless index >= 2
   puts index
-  sum = example2[index - 2].to_i + example2[index - 1].to_i + depth.to_i
+  sum = file_data[index - 2].to_i + file_data[index - 1].to_i + depth.to_i
   measurement_windows.push(sum)
 end
 

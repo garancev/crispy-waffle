@@ -1,6 +1,7 @@
-file_data = File.readlines("input.csv")
+file_data = File.readlines("example1.csv")
 
 puts 'welcome to day 2!'
+
 depth = 0
 horizontal = 0
 aim = 0
@@ -17,5 +18,8 @@ file_data.each do |direction|
   end
 end
 
-puts 'where are we going?'
+
+puts 'how many increments?'
 puts depth * horizontal
+
+puts '~~~~ second part ~~~~'
