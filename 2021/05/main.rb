@@ -4,9 +4,6 @@ file_data = File.readlines("input.csv").map(&:chomp)
 
 puts 'welcome to day 5!'
 
-size, default_value = 10, 0
-arr_2d = Array.new(size){Array.new(size,default_value)}
-
 directions = file_data.map do |vent|
   direction = vent.split(' -> ')
   all_split = direction.map do |coordinates|
