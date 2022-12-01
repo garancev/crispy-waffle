@@ -30,7 +30,6 @@ lanternfish_school = Array.new(9, 0)
 for age in 0..8
   lanternfish_school[age] = data_again.count(age)
 end
-puts "#{lanternfish_school}"
 
 for day in 1..256
   ready_to_spawn = lanternfish_school.shift
